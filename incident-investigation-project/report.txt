@@ -1,0 +1,70 @@
+
+=== Security Incident Investigation Report ===
+
+Top Suspicious Sources:
+150.183.249.110: 80 failed attempts
+n219076184117.netvigator.com: 23 failed attempts
+207.243.167.114: 23 failed attempts
+60.30.224.116: 20 failed attempts
+195.129.24.210: 15 failed attempts
+
+Targeted User Accounts:
+root: 351 attempts
+guest: 17 attempts
+test: 4 attempts
+
+Timeline of First 10 Suspicious Events:
+Jun 14 15:16:01 | 218.188.2.4 | authentication failure
+Jun 14 15:16:02 | 218.188.2.4 | authentication failure
+Jun 15 02:04:59 | 220-135-151-1.hinet-ip.hinet.net | authentication failure
+Jun 15 02:04:59 | 220-135-151-1.hinet-ip.hinet.net | authentication failure
+Jun 15 02:04:59 | 220-135-151-1.hinet-ip.hinet.net | authentication failure
+Jun 15 02:04:59 | 220-135-151-1.hinet-ip.hinet.net | authentication failure
+Jun 15 02:04:59 | 220-135-151-1.hinet-ip.hinet.net | authentication failure
+Jun 15 02:04:59 | 220-135-151-1.hinet-ip.hinet.net | authentication failure
+Jun 15 02:04:59 | 220-135-151-1.hinet-ip.hinet.net | authentication failure
+Jun 15 02:04:59 | 220-135-151-1.hinet-ip.hinet.net | authentication failure
+
+Brute Force Detection:
+ALERT: 218.188.2.4 made 12 failed attempts within 2 minutes
+ALERT: 220-135-151-1.hinet-ip.hinet.net made 10 failed attempts within 2 minutes
+ALERT: 061092085098.ctinets.com made 10 failed attempts within 2 minutes
+ALERT: d211-116-254-214.rev.krline.net made 5 failed attempts within 2 minutes
+ALERT: adsl-70-242-75-179.dsl.ksc2mo.swbell.net made 10 failed attempts within 2 minutes
+ALERT: 65.166.159.14 made 10 failed attempts within 2 minutes
+ALERT: 217.60.212.66 made 6 failed attempts within 2 minutes
+ALERT: n219076184117.netvigator.com made 23 failed attempts within 2 minutes
+ALERT: ip-216-69-169-168.ip.secureserver.net made 10 failed attempts within 2 minutes
+ALERT: 209.152.168.249 made 10 failed attempts within 2 minutes
+ALERT: 218.22.3.51 made 9 failed attempts within 2 minutes
+ALERT: massive.merukuru.org made 10 failed attempts within 2 minutes
+ALERT: troi.bluesky-technologies.com made 5 failed attempts within 2 minutes
+ALERT: 61.53.154.93 made 9 failed attempts within 2 minutes
+ALERT: 62-192-102-94.dsl.easynet.nl made 10 failed attempts within 2 minutes
+ALERT: 211.115.206.155 made 5 failed attempts within 2 minutes
+ALERT: csnsu.nsuok.edu made 10 failed attempts within 2 minutes
+ALERT: h64-187-1-131.gtconnect.net made 13 failed attempts within 2 minutes
+ALERT: biblioteka.wsi.edu.pl made 8 failed attempts within 2 minutes
+ALERT: 60.30.224.116 made 10 failed attempts within 2 minutes
+ALERT: 195.129.24.210 made 5 failed attempts within 2 minutes
+ALERT: zummit.com made 10 failed attempts within 2 minutes
+ALERT: 220.117.241.87 made 13 failed attempts within 2 minutes
+ALERT: 210.229.150.228 made 5 failed attempts within 2 minutes
+ALERT: 218.16.122.48 made 5 failed attempts within 2 minutes
+ALERT: p15105218.pureserver.info made 10 failed attempts within 2 minutes
+ALERT: 150.183.249.110 made 80 failed attempts within 2 minutes
+ALERT: 211.214.161.141 made 10 failed attempts within 2 minutes
+ALERT: 82.77.200.128 made 10 failed attempts within 2 minutes
+ALERT: 211.137.205.253 made 10 failed attempts within 2 minutes
+ALERT: 68.143.156.89.nw.nuvox.net made 10 failed attempts within 2 minutes
+ALERT: 202-132-40-29.adsl.ttn.net made 8 failed attempts within 2 minutes
+ALERT: c51471f2c.cable.wanadoo.nl made 10 failed attempts within 2 minutes
+ALERT: 211-76-104-65.ebix.net.tw made 10 failed attempts within 2 minutes
+ALERT: 202.181.236.180 made 10 failed attempts within 2 minutes
+ALERT: 218.55.234.102 made 5 failed attempts within 2 minutes
+ALERT: 211.9.58.217 made 10 failed attempts within 2 minutes
+ALERT: 203.251.225.101 made 5 failed attempts within 2 minutes
+ALERT: 207.243.167.114 made 23 failed attempts within 2 minutes
+
+Conclusion:
+Repeated authentication failures within a short time window indicate possible brute force activity.
