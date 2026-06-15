@@ -55,7 +55,7 @@ cat report.txt
 ---
 
 ## Sample Output
-## Sample Output
+
 
 ```
 === Security Incident Investigation Report ===
@@ -79,8 +79,9 @@ Brute Force Alerts (sample):
   [ALERT] 220-135-151-1.hinet-ip.hinet.net made 10 failed attempts within 2 minutes
   [ALERT] h64-187-1-131.gtconnect.net made 13 failed attempts within 2 minutes
   ... and 30+ additional flagged sources
-```
 ALERT: 207.243.167.114 made 23 failed attempts within 2 minutes
 
 Conclusion:
 Repeated authentication failures within a short time window indicate possible brute force activity.
+
+```
