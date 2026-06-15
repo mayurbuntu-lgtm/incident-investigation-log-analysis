@@ -1,34 +1,57 @@
-# Security Incident Investigation using Logs
+# Security Incident Investigation — Brute Force Log Analysis
 
-## Overview
-This project analyzes Linux authentication logs to investigate suspicious login activity and detect possible brute force attacks.
+A Python-based security tool that analyzes real Linux authentication logs to detect brute force login attacks and generates a structured incident investigation report.
 
-## Tools Used
-- Python
-- Regular Expressions
-- datetime module
+---
 
-## What the Script Does
-- Parses authentication failure logs
-- Extracts source hosts and targeted usernames
-- Builds a timeline of suspicious events
-- Detects brute force behavior using a time-window rule
-- Saves the investigation report to `report.txt`
+## What This Project Does
+
+This tool replicates the kind of log analysis a SOC analyst performs during a real incident investigation. It parses Linux `auth.log` files, identifies suspicious login patterns, and flags IPs showing brute force behavior using a time-window detection algorithm.
+
+---
 
 ## Detection Logic
-If one source has 5 or more failed login attempts within 2 minutes, it is flagged as possible brute force activity.
 
-## Output
-The script generates:
-- Top suspicious sources
-- Targeted user accounts
-- Timeline of suspicious events
-- Brute force alerts
-- Final investigation summary
+An IP is flagged as a brute force threat if it generates **5 or more failed login attempts within a 2-minute window** — the same threshold used in real SOC detection rules.
 
-## Key Skills
-- Log analysis
-- Incident investigation
-- Threat detection
-- Brute force detection
-- Report generation
+---
+
+## Features
+
+- Parses raw Linux authentication logs using Python and Regex
+- Extracts source hosts and targeted usernames from log entries
+- Builds a timeline of suspicious authentication events
+- Detects brute force behavior using a sliding time-window algorithm
+- Generates a full investigation report saved to `report.txt`
+- Outputs top suspicious sources, targeted accounts, and brute force alerts
+
+---
+
+## Tech Stack
+
+| Tool | Purpose |
+|------|---------|
+| Python | Core scripting |
+| Regex (`re`) | Log parsing |
+| `datetime` | Time-window detection |
+| Linux `auth.log` | Real log data source |
+
+---
+
+## How to Run
+
+```bash
+# Clone the repository
+git clone https://github.com/mayurbuntu-lgtm/incident-investigation-log-analysis.git
+cd incident-investigation-log-analysis
+
+# Run the investigation script
+python investigation.py
+
+# View the generated report
+cat report.txt
+```
+
+---
+
+## Sample Output
